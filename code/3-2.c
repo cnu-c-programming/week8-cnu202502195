@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[]) {
     for(int i=1; i< argc-1; i++) {
-        for(int j=1; j<argc -1; j++) {
+        for(int j=1; j<argc -i; j++) {
             if (strcmp(argv[j], argv[j+1]) > 0) {
                 char *temp = argv[j];
                 argv[j] = argv[j+1];
